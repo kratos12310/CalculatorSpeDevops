@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="8" failures="0" name="CalculatorTest" time="1.839" errors="0" skipped="0">
+<testsuite tests="8" failures="0" name="CalculatorTest" time="0.958" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="java.vm.version" value="11.0.13+8-Ubuntu-0ubuntu1.21.04"/>
@@ -60,12 +60,12 @@
     <property name="sun.desktop" value="gnome"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="CalculatorTest" name="power_Positive" time="1.821"/>
-  <testcase classname="CalculatorTest" name="power_Negative" time="0"/>
+  <testcase classname="CalculatorTest" name="power_Positive" time="0.928"/>
+  <testcase classname="CalculatorTest" name="power_Negative" time="0.002"/>
   <testcase classname="CalculatorTest" name="squareRoot_Positive" time="0.01"/>
   <testcase classname="CalculatorTest" name="factorial_Positive" time="0.006"/>
-  <testcase classname="CalculatorTest" name="squareRoot_Negative" time="0.001"/>
-  <testcase classname="CalculatorTest" name="factorial_Negative" time="0"/>
+  <testcase classname="CalculatorTest" name="squareRoot_Negative" time="0.003"/>
+  <testcase classname="CalculatorTest" name="factorial_Negative" time="0.007"/>
   <testcase classname="CalculatorTest" name="logarithm_Positive" time="0.001"/>
-  <testcase classname="CalculatorTest" name="logarithm_Negative" time="0"/>
+  <testcase classname="CalculatorTest" name="logarithm_Negative" time="0.001"/>
 </testsuite>
