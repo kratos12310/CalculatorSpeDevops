@@ -1,14 +1,10 @@
 import java.util.InputMismatchException;
+import static java.lang.Math.*;
 import java.util.Scanner;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 public class Calculator {
-
-    public static double sq_root(double a){
-        logger.info("Calculating Square Root of : " + a + "\n Result : " + Math.sqrt(a));
-        return java.lang.Math.sqrt(a);
-    }
 
     public static double factorial(int n){
         if(n<0) {
@@ -23,13 +19,18 @@ public class Calculator {
         return fact;
     }
 
+
     public static double logarithm(double a){
-        logger.info("Calculating Natural Logarithm of : " + a + "\n Result : " + Math.log(a));
-        return java.lang.Math.log(a);
+        logger.info("Calculating Natural Logarithm of : " + a + "\n Result : " + log(a));
+        return log(a);
+    }
+    public static double sq_root(double a){
+        logger.info("Calculating Square Root of : " + a + "\n Result : " + sqrt(a));
+        return sqrt(a);
     }
     public static double power(double a,double b){
-        logger.info("Power : " + a + "^" + b + "/n Result : " + Math.pow(a, b));
-        return java.lang.Math.pow(a,b);
+        logger.info("Power : " + a + "^" + b + "/n Result : " + pow(a, b));
+        return pow(a,b);
     }
 
     private static final Logger logger = LogManager.getLogger(Calculator.class);
@@ -69,19 +70,13 @@ public class Calculator {
                     default:
                         System.out.println("Invalid Choice");
                 }
-
             } catch (InputMismatchException e) {
                 System.out.println("The Input is wrong");
-
             } catch (IllegalArgumentException e) {
                 System.out.println("Input cant be negative");
             }
-
-
         }
     }
-
-
 }
 
 
